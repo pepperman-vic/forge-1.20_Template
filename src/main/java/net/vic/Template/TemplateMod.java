@@ -1,4 +1,4 @@
-package net.vic.Templates;
+package net.vic.Template;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
