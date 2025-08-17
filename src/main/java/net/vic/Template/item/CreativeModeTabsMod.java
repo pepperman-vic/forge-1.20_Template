@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.vic.Template.TemplateMod;
+import net.vic.Template.block.BlockMod;
 
 public class CreativeModeTabsMod {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
@@ -17,8 +18,12 @@ public class CreativeModeTabsMod {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ItemMod.SAPPHIRE.get()))
                     .title(Component.translatable("creativetab.tutorial_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+
                         output.accept(ItemMod.SAPPHIRE.get());
                         output.accept(ItemMod.RAW_SAPPHIRE.get());
+
+                        output.accept(BlockMod.SAPPHIRE_BLOCK.get());
+                        output.accept(BlockMod.SAPPHIRE_ORE.get());
                     })
                     .build());
 

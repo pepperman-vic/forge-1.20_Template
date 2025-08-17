@@ -1,6 +1,9 @@
 {
   "item.template.sapphire": "Sapphire",
-  "item.template.rawsapphire": "Raw Sapphire",
+  "item.template.raw_sapphire": "Raw Sapphire",
+
+  "block.template.sapphire_block": "Sapphire Block",
+  "block.template.sapphire_ore": "Sapphire Ore",
 
   "creativetab.tutorial_tab": "Tutorial Tab"
 }

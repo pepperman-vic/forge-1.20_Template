@@ -13,6 +13,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.vic.Template.block.BlockMod;
 import net.vic.Template.item.CreativeModeTabsMod;
 import net.vic.Template.item.ItemMod;
 import org.slf4j.Logger;
@@ -33,6 +34,7 @@ public class TemplateMod
         CreativeModeTabsMod.register(modEventBus);
 
         ItemMod.register(modEventBus);
+        BlockMod.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
